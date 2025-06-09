@@ -1,1 +1,759 @@
-# project-e-commerce-santikacitra
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haech Florist- Toko Online</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Haech Florist</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#keranjang">Keranjang</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="#keranjang">
+                    🛒 <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Selamat Datang di Haech Florist</h2>
+                <p>Temukan keindahan bunga segar untuk setiap momen spesial Anda.</p>
+                <a href="#produk" class="btn">Lihat Produk</a>
+            </div>
+        </section>
+
+        <section id="produk" class="product-section">
+            <div class="container">
+                <h2>Produk Terbaru</h2>
+                <div class="product-grid">
+                    <article class="product-item">
+                        <img src="bunga matahari.jpg" alt="Buket Bunga Matahari">
+                        <h3>Buket Bunga Matahari</h3>
+                        <p class="description">Bunga Cerah dan Ikonik yang melambangkan kebahagiaan,umur panjang dan pemujaan.</p>
+                        <p class="price">Rp 270.000</p>
+                        <button class="add-to-cart" data-name="Buket Mawar Merah" data-price="250000">Tambah ke Keranjang</button>
+                    </article>
+
+                    <article class="product-item">
+                        <img src="Anggrek Bulan.jpeg" alt="Rangkaian Anggrek Bulan">
+                        <h3>Anggrek Bulan Putih</h3>
+                        <p class="description">Tanaman anggrek bulan putih elegan dalam pot, mempercantik ruangan Anda.</p>
+                        <p class="price">Rp 300.000</p>
+                        <button class="add-to-cart" data-name="Anggrek Bulan Putih" data-price="300000">Tambah ke Keranjang</button>
+                    </article>
+
+                    <article class="product-item">
+                        <img src="Bunga Tulip.jpg" alt="Buket Bunga Tulip Pink">
+                        <h3>Buket Bunga  Tulip Pink</h3>
+                        <p class="description">Bunga berbentuk cangkir yang elegan dengan tangkai lurus melambangkan kasih sayang dan kebahagiaan.</p>
+                        <p class="price">Rp 280.000</p>
+                        <button class="add-to-cart" data-name="Buket Bunga Tulip Pink" data-price="280000">Tambah ke Keranjang</button>
+                    </article>
+
+                    <article class="product-item">
+                        <img src="Papan ucapan.jpg" alt="Bunga Papan Ucapan">
+                        <h3>Bunga Papan Ucapan</h3>
+                        <p class="description">Bunga papan ucapan untuk berbagai kesempatan seperti pernikahan, duka cita, atau peresmian.</p>
+                        <p class="price">Rp 750.000</p>
+                        <button class="add-to-cart" data-name="Bunga Papan Ucapan" data-price="500000">Tambah ke Keranjang</button>
+                    </article>
+
+                    <article class="product-item">
+                        <img src="standing flower wedding.jpg"Standing Flower Wedding">
+                        <h3>Standing Flower Wedding</h3>
+                        <p class="description">Rangkkaian Bunga standing untuk acara istimewa.</p>
+                        <p class="price">Rp 600.000</p>
+                        <button class="add-to-cart" data-name="Bunga Papan Ucapan" data-price="500000">Tambah ke Keranjang</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="categories-section">
+            <div class="container">
+                <h2>Kategori</h2>
+                <ul>
+                    <li><a href="#">Bouquet</a></li>
+                    <li><a href="#">Bunga Meja</a></li>
+                    <li><a href="#">Standing Flower</a></li>
+                    <li><a href="#">Papan Bunga</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>Tentang Kami</h2>
+                <p>Haech Florist adalah toko bunga online yang berdedikasi untuk menyediakan bunga-bunga segar dan indah untuk setiap kesempatan. Kami menawarkan berbagai macam rangkaian bunga, dari buket romantis hingga dekorasi acara spesial.</p>
+                <p>Kepuasan pelanggan adalah prioritas kami.</p>
+            </div>
+        </section>
+
+        <section id="keranjang" class="cart-section">
+            <div class="container">
+                <h2>Keranjang Belanja Anda</h2>
+                <div id="cart-items">
+                    <p>Keranjang Anda kosong.</p>
+                </div>
+                <div class="cart-summary">
+                    <p>Total: <span id="cart-total">Rp 0</span></p>
+                    <button class="checkout-btn">Lanjutkan ke Pembayaran</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="contact-section">
+            <div class="container">
+                <h2>Hubungi Kami</h2>
+                <p>Kami siap membantu Anda. Silakan hubungi kami melalui:</p>
+                <ul>
+                    <li>Email: haechflorist@gmail.com</li>
+                    <li>Telepon: +62 838 952 605 79</li>
+                    <li>Alamat: Jl. Braga</li>
+                </ul>
+                <form class="contact-form">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Haech Florist. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> </body>
+</html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background-color: #A7C7E7; 
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333; 
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #333; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #E6B9DE; 
+}
+
+
+.cart-icon {
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+.cart-icon a {
+    color: #333;
+    text-decoration: none;
+    position: relative;
+}
+
+#cart-count {
+    background-color: #ff6347; 
+    color: white;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    font-size: 0.7em;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.categories-section ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .categories-section ul li a {
+        background-color: #f0f0f0;
+        color: #6A5ACD;
+        padding: 0.8rem 1.5rem;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .categories-section ul li a:hover {
+        background-color: #6A0DAD;
+        color: white;
+    }
+
+.btn {
+    display: inline-block;
+    background-color: #6A5ACD; 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #483D8B; 
+}
+
+.hero {
+    background-color: #E6B9DE; 
+    color: #333;
+    text-align: center;
+    padding: 60px 0;
+    background-image: url()
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #6A5ACD;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.product-section {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.product-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #6A5ACD;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-item .description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+    min-height: 45px; 
+}
+
+.product-item .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #6A5ACD;
+    margin-bottom: 15px;
+}
+
+.product-item .add-to-cart {
+    background-color: #8A2BE2; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.product-item .add-to-cart:hover {
+    background-color: #6A0DAD; 
+}
+
+.cart-section {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.cart-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #6A5ACD;
+}
+
+.about-section p
+    .contact-section p {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+#cart-items {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 100px; 
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+}
+
+.cart-item-info h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.cart-item-info p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.cart-item-actions button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item-actions button:hover {
+    background-color: #cc0000;
+}
+
+.cart-summary {
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #6A5ACD;
+}
+
+.cart-section {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.cart-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #6A5ACD;
+}
+
+.about-section p
+    .contact-section p {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+.checkout-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #28a745; 
+}
+
+.checkout-btn:hover {
+    background-color: #218838;
+}
+
+
+
+.contact-section {
+    padding: 40px 0;
+    background-color: #E6B9DE; 
+    color: #333;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #6A5ACD;
+}
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        width: 95%;
+    }
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .cart-icon {
+        margin-top: 15px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    header .container {
+        padding: 10px 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .product-item {
+        padding: 15px;
+    }
+
+    .product-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .product-item .price {
+        font-size: 1.1rem;
+    }
+
+    .add-to-cart {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .cart-item-actions {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .checkout-btn {
+        font-size: 1.1rem;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+</Style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartCountSpan = document.getElementById('cart-count');
+    const cartTotalSpan = document.getElementById('cart-total');
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || []; 
+    updateCartDisplay();
+
+    function formatRupiah(number) {
+        return new Intl.NumberFormat('id-ID', {
+            style: 'currency',
+            currency: 'IDR',
+            minimumFractionDigits: 0
+        }).format(number);
+    }
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            const productName = event.target.dataset.name;
+            const productPrice = parseFloat(event.target.dataset.price);
+
+            const existingItem = cart.find(item => item.name === productName);
+
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cart.push({ name: productName, price: productPrice, quantity: 1 });
+            }
+
+            saveCartToLocalStorage();
+            updateCartDisplay();
+            alert(`${productName} telah ditambahkan ke keranjang!`);
+        });
+    });
+
+    cartItemsContainer.addEventListener('click', (event) => {
+        if (event.target.classList.contains('remove-from-cart')) {
+            const productNameToRemove = event.target.dataset.name;
+            cart = cart.filter(item => item.name !== productNameToRemove);
+            saveCartToLocalStorage();
+            updateCartDisplay();
+        }
+    });
+
+    function updateCartDisplay() {
+        cartItemsContainer.innerHTML = ''; 
+        let total = 0;
+
+        if (cart.length === 0) {
+            cartItemsContainer.innerHTML = '<p>Keranjang Anda kosong.</p>';
+        } else {
+            cart.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('cart-item');
+                itemElement.innerHTML = `
+                    <div class="cart-item-info">
+                        <h4>${item.name}</h4>
+                        <p>${formatRupiah(item.price)} x ${item.quantity}</p>
+                    </div>
+                    <div class="cart-item-actions">
+                        <button class="remove-from-cart" data-name="${item.name}">Hapus</button>
+                    </div>
+                `;
+                cartItemsContainer.appendChild(itemElement);
+                total += item.price * item.quantity;
+            });
+        }
+
+        cartCountSpan.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartTotalSpan.textContent = formatRupiah(total);
+    }
+
+    function saveCartToLocalStorage() {
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+    const checkoutButton = document.querySelector('.checkout-btn');
+    checkoutButton.addEventListener('click', () => {
+        if (cart.length > 0) {
+            alert(`Anda akan melanjutkan ke pembayaran dengan total ${cartTotalSpan.textContent}. Terima kasih!`);
+            cart = []; 
+            saveCartToLocalStorage();
+            updateCartDisplay();
+        } else {
+            alert('Keranjang belanja Anda masih kosong.');
+        }
+    });
+});
+</script>
+</body>
+</html>
